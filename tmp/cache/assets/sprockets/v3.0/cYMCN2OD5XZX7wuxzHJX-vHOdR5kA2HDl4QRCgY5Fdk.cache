@@ -1,0 +1,7 @@
+I"…(function() {
+  $('.add-button').bind('ajax:success', function(e, data) {
+    return $('.table').append(data);
+  });
+
+}).call(this);
+:ET

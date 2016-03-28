@@ -1,0 +1,12 @@
+I"(function() {
+  $(document).on('ajax:success', 'form', function(e, data) {
+    return $('.table').append(data);
+  });
+
+  $(document).on('ajax:success', '.button_to', function() {
+    console.log('ok');
+    return $(this).closest('tr').remove();
+  });
+
+}).call(this);
+:ET
